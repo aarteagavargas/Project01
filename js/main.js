@@ -68,3 +68,33 @@ function calculateAge(bornYear){
     var age = 2014 - bornYear;// variable local
     return age;
 }
+/*SESSION3*//*
+pepe=(name:"Pepe")//crea un objeto json
+pepe.name
+pepe.sayHello=function(){console.log('Hola')}
+pepe.sayHello()
+var Myobj =new Object();
+
+
+"simple".split('')//separa por caracteres*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
