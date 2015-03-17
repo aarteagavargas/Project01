@@ -5,12 +5,18 @@
  * Created by Alejandra Arteaga on 3/12/2015.
  */
 var doOperations= function(){
-    var numbers=arguments;
-    console.log('The MAX is :'+getMax(numbers));
-    console.log('The MIN is :'+getMin(numbers))
-    console.log('The AVG is :'+getAvg(numbers))
-    console.log('The SUM is :'+getSum(numbers))
 
+    var numbers= prompt("Enter values");
+    var ser= numbers.split(",");
+    var real= [];
+    for ( var i= 0; i<ser.length;i++)
+    {
+        real[i] =parseInt(ser[i]) ;
+    }
+    window.alert('The MAX is :'+getMax(real));
+    window.alert('The MIN is :'+getMin(real));
+    window.alert('The AVG is :'+getAvg(real));
+    window.alert('The SUM is :'+getSum(real));
 };
 // nombre de variables y funciones q empieze con miniscula no usar underscore _
 //nombre de clases q empice con mayuscula eg Vehiculo
