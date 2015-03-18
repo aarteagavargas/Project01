@@ -1,9 +1,6 @@
 /**
  * Created by Alejandra Arteaga on 3/17/2015.
  */
-/**
- * Created by Alejandra Arteaga on 3/12/2015.
- */
 var doOperations= function(){
     var numbers=arguments;
     console.log('The MAX is :'+getMax(numbers));
