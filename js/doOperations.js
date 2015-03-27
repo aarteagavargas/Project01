@@ -80,3 +80,4 @@ var getSum= function(numbers,pos,sum){
     return getSum(numbers,pos-1,sum);
 
 };
+doOperations(5,4,3,1);

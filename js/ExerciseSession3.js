@@ -2,6 +2,7 @@
  * Created by Alejandra Arteaga on 3/13/2015.
  */
 var countWords= function(paragraph){
+    console.log("The number of words is: "+paragraph.split(" ").length)
     return paragraph.split(" ").length;
 };
 /*
@@ -13,15 +14,20 @@ following format:
 var printDate=function(){
     var   now = new Date();
     var jason= {
-        '1':'',
+        '1':'Monday',
         '2':'Tuesday',
-        '3':''
+        '3':'Wednesday',
+        '4':'Thursday',
+        '5':'Friday',
+        '6':'Saturday',
+        '7':'Sunday'
+
     }; //para fin de una variable ;
-    /* var strDays= ["","Monday","Tuesday","",""]
+    /* var strDays= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
     console.log("Today is: "+ strDays[now.getDay()]);*/
     console.log("Today is: "+ jason[now.getDay()]);
     // Formato de 24 hrs
-    var hour= now.getHours()>12 ? (now.getHours()-12)+'PM': now.getHours()+'AM';//funciona igual q un IF
+    var hour= now.getHours()>12 ? (now.getHours()-12)+' AM ': now.getHours()+' PM ';//funciona igual q un IF
     console.log("Current time is: "+ hour+":"+now.getMinutes()+":"+now.getSeconds());
 
 };
@@ -54,10 +60,10 @@ var validDate= function(){
     var regDay = new RegExp(/^0[0-9]{1}|1[0-9]{1}|2[0-9]{1}|3[0-9]{1}$/);
 
 };
-
-
-
-
+console.log('----Count Word----');
+countWords("Hola Mundo");
+console.log('----Print Date----');
+printDate();
 
 
 
