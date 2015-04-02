@@ -78,7 +78,36 @@ var Myobj =new Object();
 
 "simple".split('')//separa por caracteres*/
 
+// CONSTANTS (example 1)
+var GAME = {
+    BOARD_SIZE: 8,
+    TOTAL_SHIPS: 4
+};
 
+// CONSTANTS (example 2)
+var CONSTANTS = (function(){
+    var _constants = {
+        BOARD_SIZE: 8,
+        TOTAL_SHIPS: 4
+    };
+
+    return {
+        get: function(key) {
+            return _constants[key];
+        }
+    };
+})();
+
+/*
+ SOME RULES FOR THE PROJECT
+ 1- Every team member knows the code
+ 2- Apply Google JavaScript coding conventions
+ 3- Code reviews after each commit
+ 4- DEMOS
+ 5- Everyday 5 points are in play
+ 6- Pair programming and rotation
+ 7- Documentation
+ */
 
 
 
